@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    margin:30px auto;
+    font-size: 30px;
+    
+}
+
+h1,h3{
+    margin: 5px;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+h3{
+    font-size: 30px;
+}
+
+
+
+
+
+
+.Back{
+    width: 200px;
+    width: 200px;
+    top: 10%;
+    left: 75%;
+    position: fixed;
+     
+    
+    animation: transform 1s linear;
+    animation: llegada 2s linear;
+    
+}
+
+.Back:hover{
+    transform: scale(1.1);
+}
+
+
+
+@keyframes llegada {
+    0%{
+        transform: rotate(340deg);
+        transform: scale(1.2);
+        left: 110%;
+        top: 5%;
+        
+    }
+
+    50%{
+        transform: rotate(360deg);
+        transform: scale(1.2);
+        top: 10%
+    }
+    
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+
+
+@keyframes vuelo {
+    45%{
+        transform: scale(1.4);
+        left: 20%;
+        top: 8%;
+    }
+    
+
+    
+    100%{
+        transform: rotate(15deg);
+        left: -40%;
+        top: 0%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 150px;
+    width: 1000px;
+    
+}
+
+article{
+    width: 800px;
+    right: 50px;
+}
+
+p{
+    max-width: 800px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 100px; 
+    max-width: 700px;
+}
+
+.img{
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover{
+    
+    transform: scale(1.2);
+}
+
+
+
+
+
+.precios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
+    max-width: 800px;
+}
+
+table {
+    font-size: 20px;
+    border-spacing: 50px;
+}
+td{
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    transition: all 0.5s;
+}
+
+td:hover{
+    
+    background-color: #89CFF3;
+}

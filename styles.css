@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300&display=swap');
+
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/Background.png);
+    
+}
+
+
+header{
+    margin:30px ;
+    font-size: 30px;
+}
+
+h1,h3{
+    margin: 5px;
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+}
+h3{
+    max-height: 50px;
+}
+
+article{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.7s;
+}
+
+a:hover{
+    color: #89CFF3;
+    font-size: 40px;
+}
+
+.tablaimg{
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+
+.titutabla{
+    font-size: 30px;
+}
+
+table{
+    max-width: 2000px;
+}
+
+.img-plane{
+    z-index: -1;
+    position: fixed;
+    width: 400px;
+}
+
+#PlaneI{
+    top: 2%;
+    left: 2%;
+    animation: llegaI 0.8s linear;
+    
+}
+
+#PlaneD{
+    top: 2%;
+    right: 2%;
+    transform: scaleX(-1);
+    animation: llegaD 0.8s linear;
+}
+
+
+
+@keyframes llegaI {
+    from{
+        top: 30%;
+        left: -30%;
+    }
+}
+
+@keyframes llegaD {
+    from{
+        top: 30%;
+        right: -30%;
+    }
+}
