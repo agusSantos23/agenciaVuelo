@@ -67,33 +67,6 @@ h3{
 }
 
 
-@keyframes vuelo {
-    45%{
-        transform: scale(1.4);
-        left: 20%;
-        top: 8%;
-    }
-    
-
-    
-    100%{
-        transform: rotate(15deg);
-        left: -40%;
-        top: 0%;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 div{
     display: flex;
